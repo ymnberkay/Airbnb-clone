@@ -14,6 +14,9 @@
 		CE8D2C9E2C81F37F00E6E3F4 /* Airbnb_cloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D2C9D2C81F37F00E6E3F4 /* Airbnb_cloneTests.swift */; };
 		CE8D2CA82C81F37F00E6E3F4 /* Airbnb_cloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D2CA72C81F37F00E6E3F4 /* Airbnb_cloneUITests.swift */; };
 		CE8D2CAA2C81F37F00E6E3F4 /* Airbnb_cloneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D2CA92C81F37F00E6E3F4 /* Airbnb_cloneUITestsLaunchTests.swift */; };
+		CE8D2CC42C81F76000E6E3F4 /* LoginSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D2CC32C81F76000E6E3F4 /* LoginSignupView.swift */; };
+		CE8D2CC62C81F8AC00E6E3F4 /* Montserrat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE8D2CC52C81F8AC00E6E3F4 /* Montserrat.ttf */; };
+		CE8D2CCB2C8204C900E6E3F4 /* Custom+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D2CCA2C8204C900E6E3F4 /* Custom+Font.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,10 @@
 		CE8D2CA32C81F37F00E6E3F4 /* Airbnb-cloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Airbnb-cloneUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8D2CA72C81F37F00E6E3F4 /* Airbnb_cloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airbnb_cloneUITests.swift; sourceTree = "<group>"; };
 		CE8D2CA92C81F37F00E6E3F4 /* Airbnb_cloneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airbnb_cloneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE8D2CC32C81F76000E6E3F4 /* LoginSignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupView.swift; sourceTree = "<group>"; };
+		CE8D2CC52C81F8AC00E6E3F4 /* Montserrat.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Montserrat.ttf; sourceTree = "<group>"; };
+		CE8D2CC72C81F91900E6E3F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CE8D2CCA2C8204C900E6E3F4 /* Custom+Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Custom+Font.swift"; path = "Airbnb-clone/Feature/Login-Signup/Custom+Font.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +101,7 @@
 		CE8D2C8B2C81F37B00E6E3F4 /* Airbnb-clone */ = {
 			isa = PBXGroup;
 			children = (
+				CE8D2CC72C81F91900E6E3F4 /* Info.plist */,
 				CE8D2C8C2C81F37B00E6E3F4 /* Airbnb_cloneApp.swift */,
 				CE8D2CB62C81F54B00E6E3F4 /* Core */,
 				CE8D2CB72C81F55400E6E3F4 /* Feature */,
@@ -133,6 +141,7 @@
 		CE8D2CB62C81F54B00E6E3F4 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				CE8D2CBB2C81F6AC00E6E3F4 /* Navigation */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -140,6 +149,7 @@
 		CE8D2CB72C81F55400E6E3F4 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				CE8D2CBC2C81F6D500E6E3F4 /* Login-Signup */,
 				CE8D2C8E2C81F37B00E6E3F4 /* ContentView.swift */,
 			);
 			path = Feature;
@@ -155,6 +165,8 @@
 		CE8D2CB92C81F57400E6E3F4 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				CE8D2CC82C82046A00E6E3F4 /* New Group */,
+				CE8D2CC52C81F8AC00E6E3F4 /* Montserrat.ttf */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -165,6 +177,29 @@
 				CE8D2C902C81F37E00E6E3F4 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		CE8D2CBB2C81F6AC00E6E3F4 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		CE8D2CBC2C81F6D500E6E3F4 /* Login-Signup */ = {
+			isa = PBXGroup;
+			children = (
+				CE8D2CC32C81F76000E6E3F4 /* LoginSignupView.swift */,
+			);
+			path = "Login-Signup";
+			sourceTree = "<group>";
+		};
+		CE8D2CC82C82046A00E6E3F4 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				CE8D2CCA2C8204C900E6E3F4 /* Custom+Font.swift */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE8D2C942C81F37E00E6E3F4 /* Preview Assets.xcassets in Resources */,
+				CE8D2CC62C81F8AC00E6E3F4 /* Montserrat.ttf in Resources */,
 				CE8D2C912C81F37E00E6E3F4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,6 +333,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8D2CC42C81F76000E6E3F4 /* LoginSignupView.swift in Sources */,
+				CE8D2CCB2C8204C900E6E3F4 /* Custom+Font.swift in Sources */,
 				CE8D2C8F2C81F37B00E6E3F4 /* ContentView.swift in Sources */,
 				CE8D2C8D2C81F37B00E6E3F4 /* Airbnb_cloneApp.swift in Sources */,
 			);
@@ -465,6 +503,7 @@
 				DEVELOPMENT_TEAM = L3FSH6376S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Airbnb-clone/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -494,6 +533,7 @@
 				DEVELOPMENT_TEAM = L3FSH6376S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Airbnb-clone/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
