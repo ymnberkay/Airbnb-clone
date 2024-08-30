@@ -194,7 +194,7 @@
 		CE8D2CBB2C81F6AC00E6E3F4 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				CE8D2CCE2C82067700E6E3F4 /* New Group */,
+				CE8D2CCE2C82067700E6E3F4 /* Checkout */,
 				CE8D2CD12C82070900E6E3F4 /* ViewBuilder.swift */,
 				CE8D2CD32C82071C00E6E3F4 /* Router.swift */,
 				CE8D2CD52C82073600E6E3F4 /* NavigationController.swift */,
@@ -220,12 +220,12 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		CE8D2CCE2C82067700E6E3F4 /* New Group */ = {
+		CE8D2CCE2C82067700E6E3F4 /* Checkout */ = {
 			isa = PBXGroup;
 			children = (
 				CE8D2CCF2C8206D800E6E3F4 /* CheckOutNavigation.swift */,
 			);
-			path = "New Group";
+			path = Checkout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
