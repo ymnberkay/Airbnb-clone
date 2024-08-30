@@ -9,9 +9,15 @@ import SwiftUI
 
 @main
 struct Airbnb_cloneApp: App {
+    let nav = NavigationControllers()
+    let router = CheckoutViewsRouter()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootNavigationController(nav: nav.checkoutNavigationController, rootView: LoginSignupView(), navigationBarTitle: "Airbnb")
+                .environmentObject(router)
+                .onAppear {
+                    router.nav = nav.checkoutNavigationController
+                }
         }
     }
 }
