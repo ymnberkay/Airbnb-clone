@@ -11,7 +11,7 @@ struct LoginSignupView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
             Text("Welcome to Airbnb")
-                .font(.custom("Montserrat", size: 16))
+                .montserrat(size: 16)
             
         }
     }

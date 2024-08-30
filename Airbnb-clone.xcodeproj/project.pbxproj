@@ -17,6 +17,12 @@
 		CE8D2CC42C81F76000E6E3F4 /* LoginSignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D2CC32C81F76000E6E3F4 /* LoginSignupView.swift */; };
 		CE8D2CC62C81F8AC00E6E3F4 /* Montserrat.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE8D2CC52C81F8AC00E6E3F4 /* Montserrat.ttf */; };
 		CE8D2CCB2C8204C900E6E3F4 /* Custom+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D2CCA2C8204C900E6E3F4 /* Custom+Font.swift */; };
+		CE8D2CD02C8206D800E6E3F4 /* CheckOutNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D2CCF2C8206D800E6E3F4 /* CheckOutNavigation.swift */; };
+		CE8D2CD22C82070900E6E3F4 /* ViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D2CD12C82070900E6E3F4 /* ViewBuilder.swift */; };
+		CE8D2CD42C82071C00E6E3F4 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D2CD32C82071C00E6E3F4 /* Router.swift */; };
+		CE8D2CD62C82073600E6E3F4 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D2CD52C82073600E6E3F4 /* NavigationController.swift */; };
+		CE8D2CD82C82074C00E6E3F4 /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D2CD72C82074C00E6E3F4 /* RootNavigationController.swift */; };
+		CE8D2CDA2C82076900E6E3F4 /* CustomHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D2CD92C82076900E6E3F4 /* CustomHostingController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,12 @@
 		CE8D2CC52C81F8AC00E6E3F4 /* Montserrat.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Montserrat.ttf; sourceTree = "<group>"; };
 		CE8D2CC72C81F91900E6E3F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CE8D2CCA2C8204C900E6E3F4 /* Custom+Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Custom+Font.swift"; path = "Airbnb-clone/Feature/Login-Signup/Custom+Font.swift"; sourceTree = SOURCE_ROOT; };
+		CE8D2CCF2C8206D800E6E3F4 /* CheckOutNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutNavigation.swift; sourceTree = "<group>"; };
+		CE8D2CD12C82070900E6E3F4 /* ViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilder.swift; sourceTree = "<group>"; };
+		CE8D2CD32C82071C00E6E3F4 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		CE8D2CD52C82073600E6E3F4 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		CE8D2CD72C82074C00E6E3F4 /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
+		CE8D2CD92C82076900E6E3F4 /* CustomHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHostingController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,7 +177,7 @@
 		CE8D2CB92C81F57400E6E3F4 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				CE8D2CC82C82046A00E6E3F4 /* New Group */,
+				CE8D2CC82C82046A00E6E3F4 /* Extension */,
 				CE8D2CC52C81F8AC00E6E3F4 /* Montserrat.ttf */,
 			);
 			path = Utils;
@@ -182,6 +194,12 @@
 		CE8D2CBB2C81F6AC00E6E3F4 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				CE8D2CCE2C82067700E6E3F4 /* New Group */,
+				CE8D2CD12C82070900E6E3F4 /* ViewBuilder.swift */,
+				CE8D2CD32C82071C00E6E3F4 /* Router.swift */,
+				CE8D2CD52C82073600E6E3F4 /* NavigationController.swift */,
+				CE8D2CD72C82074C00E6E3F4 /* RootNavigationController.swift */,
+				CE8D2CD92C82076900E6E3F4 /* CustomHostingController.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -194,10 +212,18 @@
 			path = "Login-Signup";
 			sourceTree = "<group>";
 		};
-		CE8D2CC82C82046A00E6E3F4 /* New Group */ = {
+		CE8D2CC82C82046A00E6E3F4 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				CE8D2CCA2C8204C900E6E3F4 /* Custom+Font.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CE8D2CCE2C82067700E6E3F4 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				CE8D2CCF2C8206D800E6E3F4 /* CheckOutNavigation.swift */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -334,7 +360,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE8D2CC42C81F76000E6E3F4 /* LoginSignupView.swift in Sources */,
+				CE8D2CD62C82073600E6E3F4 /* NavigationController.swift in Sources */,
+				CE8D2CD82C82074C00E6E3F4 /* RootNavigationController.swift in Sources */,
 				CE8D2CCB2C8204C900E6E3F4 /* Custom+Font.swift in Sources */,
+				CE8D2CD22C82070900E6E3F4 /* ViewBuilder.swift in Sources */,
+				CE8D2CDA2C82076900E6E3F4 /* CustomHostingController.swift in Sources */,
+				CE8D2CD42C82071C00E6E3F4 /* Router.swift in Sources */,
+				CE8D2CD02C8206D800E6E3F4 /* CheckOutNavigation.swift in Sources */,
 				CE8D2C8F2C81F37B00E6E3F4 /* ContentView.swift in Sources */,
 				CE8D2C8D2C81F37B00E6E3F4 /* Airbnb_cloneApp.swift in Sources */,
 			);

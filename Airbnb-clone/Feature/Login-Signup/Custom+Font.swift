@@ -6,3 +6,9 @@
 //
 
 import Foundation
+import SwiftUI
+extension View {
+    func montserrat(size: CGFloat) -> some View {
+        self.font(.custom("Montserrat", size: size))
+    }
+}
