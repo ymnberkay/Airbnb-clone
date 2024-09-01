@@ -6,14 +6,26 @@
 //
 
 import SwiftUI
+import FirebaseCore
+
+class AppDelegate: NSObject, UIApplicationDelegate {
+  func application(_ application: UIApplication,
+                   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+    return true
+  }
+}
 
 @main
 struct Airbnb_cloneApp: App {
-    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @ObservedObject var viewModel = LoginSignupViewModel()
     let nav = NavigationControllers()
     let router = CheckoutViewsRouter()
     
-    @ObservedObject var viewModel = LoginSignupViewModel()
+    init() {
+        FirebaseApp.configure()
+    }
+   
     
     var body: some Scene {
         WindowGroup {
