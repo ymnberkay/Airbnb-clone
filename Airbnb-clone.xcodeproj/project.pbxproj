@@ -23,10 +23,13 @@
 		CE8D2CD62C82073600E6E3F4 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D2CD52C82073600E6E3F4 /* NavigationController.swift */; };
 		CE8D2CD82C82074C00E6E3F4 /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D2CD72C82074C00E6E3F4 /* RootNavigationController.swift */; };
 		CE8D2CDA2C82076900E6E3F4 /* CustomHostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D2CD92C82076900E6E3F4 /* CustomHostingController.swift */; };
-		CE8D2CDC2C8271B900E6E3F4 /* AppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D2CDB2C8271B900E6E3F4 /* AppleButton.swift */; };
 		CE8D2CDE2C82726A00E6E3F4 /* NormalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D2CDD2C82726A00E6E3F4 /* NormalButton.swift */; };
-		CE8D2CE02C8274E200E6E3F4 /* FacebookButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D2CDF2C8274E200E6E3F4 /* FacebookButton.swift */; };
 		CE8D2CE22C82795400E6E3F4 /* SignupButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D2CE12C82795400E6E3F4 /* SignupButton.swift */; };
+		CE8D2CE82C833CB300E6E3F4 /* LoginSignupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D2CE72C833CB300E6E3F4 /* LoginSignupViewModel.swift */; };
+		CE8D2CEB2C833E7900E6E3F4 /* CountryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D2CEA2C833E7900E6E3F4 /* CountryData.swift */; };
+		CE8D2CED2C83478F00E6E3F4 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D2CEC2C83478F00E6E3F4 /* Country.swift */; };
+		CE8D2CEF2C834D4E00E6E3F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE8D2CEE2C834D4E00E6E3F4 /* GoogleService-Info.plist */; };
+		CE8D2CF12C84859500E6E3F4 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D2CF02C84859500E6E3F4 /* FirebaseManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,10 +70,13 @@
 		CE8D2CD52C82073600E6E3F4 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		CE8D2CD72C82074C00E6E3F4 /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
 		CE8D2CD92C82076900E6E3F4 /* CustomHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHostingController.swift; sourceTree = "<group>"; };
-		CE8D2CDB2C8271B900E6E3F4 /* AppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleButton.swift; sourceTree = "<group>"; };
 		CE8D2CDD2C82726A00E6E3F4 /* NormalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalButton.swift; sourceTree = "<group>"; };
-		CE8D2CDF2C8274E200E6E3F4 /* FacebookButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookButton.swift; sourceTree = "<group>"; };
 		CE8D2CE12C82795400E6E3F4 /* SignupButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupButton.swift; sourceTree = "<group>"; };
+		CE8D2CE72C833CB300E6E3F4 /* LoginSignupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignupViewModel.swift; sourceTree = "<group>"; };
+		CE8D2CEA2C833E7900E6E3F4 /* CountryData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryData.swift; sourceTree = "<group>"; };
+		CE8D2CEC2C83478F00E6E3F4 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		CE8D2CEE2C834D4E00E6E3F4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CE8D2CF02C84859500E6E3F4 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +127,7 @@
 		CE8D2C8B2C81F37B00E6E3F4 /* Airbnb-clone */ = {
 			isa = PBXGroup;
 			children = (
+				CE8D2CEE2C834D4E00E6E3F4 /* GoogleService-Info.plist */,
 				CE8D2CC72C81F91900E6E3F4 /* Info.plist */,
 				CE8D2C8C2C81F37B00E6E3F4 /* Airbnb_cloneApp.swift */,
 				CE8D2CB62C81F54B00E6E3F4 /* Core */,
@@ -161,7 +168,9 @@
 		CE8D2CB62C81F54B00E6E3F4 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				CE8D2CF22C84859A00E6E3F4 /* New Group */,
 				CE8D2CBB2C81F6AC00E6E3F4 /* Navigation */,
+				CE8D2CF02C84859500E6E3F4 /* FirebaseManager.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -178,9 +187,7 @@
 		CE8D2CB82C81F56500E6E3F4 /* Product */ = {
 			isa = PBXGroup;
 			children = (
-				CE8D2CDB2C8271B900E6E3F4 /* AppleButton.swift */,
 				CE8D2CDD2C82726A00E6E3F4 /* NormalButton.swift */,
-				CE8D2CDF2C8274E200E6E3F4 /* FacebookButton.swift */,
 				CE8D2CE12C82795400E6E3F4 /* SignupButton.swift */,
 			);
 			path = Product;
@@ -189,6 +196,7 @@
 		CE8D2CB92C81F57400E6E3F4 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				CE8D2CE92C833E6500E6E3F4 /* Country Code */,
 				CE8D2CC82C82046A00E6E3F4 /* Extension */,
 				CE8D2CC52C81F8AC00E6E3F4 /* Montserrat.ttf */,
 			);
@@ -219,7 +227,9 @@
 		CE8D2CBC2C81F6D500E6E3F4 /* Login-Signup */ = {
 			isa = PBXGroup;
 			children = (
-				CE8D2CC32C81F76000E6E3F4 /* LoginSignupView.swift */,
+				CE8D2CE62C833C9800E6E3F4 /* Model */,
+				CE8D2CE52C833C9300E6E3F4 /* View */,
+				CE8D2CE42C833C7900E6E3F4 /* ViewModel */,
 			);
 			path = "Login-Signup";
 			sourceTree = "<group>";
@@ -238,6 +248,45 @@
 				CE8D2CCF2C8206D800E6E3F4 /* CheckOutNavigation.swift */,
 			);
 			path = Checkout;
+			sourceTree = "<group>";
+		};
+		CE8D2CE42C833C7900E6E3F4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE8D2CE72C833CB300E6E3F4 /* LoginSignupViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE8D2CE52C833C9300E6E3F4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE8D2CC32C81F76000E6E3F4 /* LoginSignupView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE8D2CE62C833C9800E6E3F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE8D2CEC2C83478F00E6E3F4 /* Country.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE8D2CE92C833E6500E6E3F4 /* Country Code */ = {
+			isa = PBXGroup;
+			children = (
+				CE8D2CEA2C833E7900E6E3F4 /* CountryData.swift */,
+			);
+			path = "Country Code";
+			sourceTree = "<group>";
+		};
+		CE8D2CF22C84859A00E6E3F4 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE8D2C942C81F37E00E6E3F4 /* Preview Assets.xcassets in Resources */,
+				CE8D2CEF2C834D4E00E6E3F4 /* GoogleService-Info.plist in Resources */,
 				CE8D2CC62C81F8AC00E6E3F4 /* Montserrat.ttf in Resources */,
 				CE8D2C912C81F37E00E6E3F4 /* Assets.xcassets in Resources */,
 			);
@@ -373,17 +423,19 @@
 			files = (
 				CE8D2CC42C81F76000E6E3F4 /* LoginSignupView.swift in Sources */,
 				CE8D2CD62C82073600E6E3F4 /* NavigationController.swift in Sources */,
-				CE8D2CE02C8274E200E6E3F4 /* FacebookButton.swift in Sources */,
 				CE8D2CDE2C82726A00E6E3F4 /* NormalButton.swift in Sources */,
 				CE8D2CD82C82074C00E6E3F4 /* RootNavigationController.swift in Sources */,
 				CE8D2CCB2C8204C900E6E3F4 /* Custom+Font.swift in Sources */,
 				CE8D2CD22C82070900E6E3F4 /* ViewBuilder.swift in Sources */,
 				CE8D2CDA2C82076900E6E3F4 /* CustomHostingController.swift in Sources */,
-				CE8D2CDC2C8271B900E6E3F4 /* AppleButton.swift in Sources */,
 				CE8D2CD42C82071C00E6E3F4 /* Router.swift in Sources */,
 				CE8D2CD02C8206D800E6E3F4 /* CheckOutNavigation.swift in Sources */,
+				CE8D2CEB2C833E7900E6E3F4 /* CountryData.swift in Sources */,
 				CE8D2C8F2C81F37B00E6E3F4 /* ContentView.swift in Sources */,
+				CE8D2CE82C833CB300E6E3F4 /* LoginSignupViewModel.swift in Sources */,
+				CE8D2CF12C84859500E6E3F4 /* FirebaseManager.swift in Sources */,
 				CE8D2C8D2C81F37B00E6E3F4 /* Airbnb_cloneApp.swift in Sources */,
+				CE8D2CED2C83478F00E6E3F4 /* Country.swift in Sources */,
 				CE8D2CE22C82795400E6E3F4 /* SignupButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

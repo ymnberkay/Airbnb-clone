@@ -8,10 +8,8 @@
 import SwiftUI
 
 struct LoginSignupView: View {
-    @State private var selectedCountry = "India (+91)"
-    @State private var phoneNumber = ""
-    
-    let countries = ["India (+91)", "USA (+1)", "UK (+44)", "Germany (+49)", "France (+33)"]
+    @ObservedObject var viewModel: LoginSignupViewModel
+    @EnvironmentObject var router: CheckoutViewsRouter
     
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
@@ -22,13 +20,19 @@ struct LoginSignupView: View {
             
             VStack {
                 HStack {
-                    Picker("Country/Region", selection: $selectedCountry) {
-                        ForEach(countries, id: \.self) {
-                            Text($0)
+                    Picker("Country/Region", selection: $viewModel.selectedCountry) {
+                        ForEach(CountryCode.countryCodes.sorted(by: <).map { (key, value) in
+                            Country(name: key, code: value)
+                        }, id: \.self) { country in
+                            HStack {
+                                Text("\(country.name) (\(country.code))")
+                            }
                         }
                     }
                     .pickerStyle(MenuPickerStyle())
-                    .padding(.leading)
+                    .montserrat(size: 16)
+                    .foregroundColor(.black)
+                    .padding(.all)
                     
                     Spacer()
                     
@@ -39,19 +43,18 @@ struct LoginSignupView: View {
                 Divider()
                     .background(Color.black)
                 
-                TextField("Phone number", text: $phoneNumber)
-                    .padding(.leading)
-                    .frame(height: 44)
+                TextField("Phone number", text: $viewModel.phoneNumber)
+                    .padding(.all)
                     .background(Color.clear)
-                    .padding()
             }
             .overlay(
                 RoundedRectangle(cornerRadius: 8)
                     .stroke(Color.gray, lineWidth: 1)
             )
             Text("We’ll call or text you to confirm your number. Standard message and data rates apply. ")
-                        .foregroundColor(.black)
-                        .montserrat(size: 14)
+                .foregroundColor(.black)
+                .montserrat(size: 14)
+//            router.pushTo(view: CheckoutView.builder.makeView(InfoView(), withNavigationTitle: "Bilgiler", navBarHidden: false)
             NormalButton(onTap: {
                 
             }, title: "Continue")
@@ -75,7 +78,6 @@ struct LoginSignupView: View {
                 
             }, title: "Continue with Email", image: "apple-logo")
             
-            Spacer()
             
             HStack {
                 Spacer()
@@ -93,5 +95,5 @@ struct LoginSignupView: View {
 }
 
 #Preview {
-    LoginSignupView()
+    LoginSignupView(viewModel: LoginSignupViewModel())
 }
