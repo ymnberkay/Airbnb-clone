@@ -38,6 +38,9 @@
 		CE8D2CFF2C84878700E6E3F4 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = CE8D2CFE2C84878700E6E3F4 /* FirebaseStorage */; };
 		CE8D2D052C867BD000E6E3F4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D2D042C867BD000E6E3F4 /* MainView.swift */; };
 		CE8D2D072C867D0E00E6E3F4 /* FeatureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8D2D062C867D0E00E6E3F4 /* FeatureButton.swift */; };
+		CEB64DF52CA6CE37000AD5F4 /* HomeCategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB64DF42CA6CE37000AD5F4 /* HomeCategoryButton.swift */; };
+		CEB64DF72CA6D18D000AD5F4 /* MainViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB64DF62CA6D18D000AD5F4 /* MainViewViewModel.swift */; };
+		CEB64DFA2CA6D313000AD5F4 /* TotalPriceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB64DF92CA6D312000AD5F4 /* TotalPriceButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +90,9 @@
 		CE8D2CF02C84859500E6E3F4 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		CE8D2D042C867BD000E6E3F4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		CE8D2D062C867D0E00E6E3F4 /* FeatureButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureButton.swift; sourceTree = "<group>"; };
+		CEB64DF42CA6CE37000AD5F4 /* HomeCategoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCategoryButton.swift; sourceTree = "<group>"; };
+		CEB64DF62CA6D18D000AD5F4 /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; };
+		CEB64DF92CA6D312000AD5F4 /* TotalPriceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalPriceButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +212,8 @@
 				CE8D2CDD2C82726A00E6E3F4 /* NormalButton.swift */,
 				CE8D2CE12C82795400E6E3F4 /* SignupButton.swift */,
 				CE8D2D062C867D0E00E6E3F4 /* FeatureButton.swift */,
+				CEB64DF42CA6CE37000AD5F4 /* HomeCategoryButton.swift */,
+				CEB64DF92CA6D312000AD5F4 /* TotalPriceButton.swift */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -328,6 +336,7 @@
 		CE8D2D022C867BBB00E6E3F4 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				CEB64DF62CA6D18D000AD5F4 /* MainViewViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -487,6 +496,7 @@
 				CE8D2CDE2C82726A00E6E3F4 /* NormalButton.swift in Sources */,
 				CE8D2CD82C82074C00E6E3F4 /* RootNavigationController.swift in Sources */,
 				CE8D2CCB2C8204C900E6E3F4 /* Custom+Font.swift in Sources */,
+				CEB64DF52CA6CE37000AD5F4 /* HomeCategoryButton.swift in Sources */,
 				CE8D2CD22C82070900E6E3F4 /* ViewBuilder.swift in Sources */,
 				CE8D2CDA2C82076900E6E3F4 /* CustomHostingController.swift in Sources */,
 				CE8D2CD42C82071C00E6E3F4 /* Router.swift in Sources */,
@@ -499,6 +509,8 @@
 				CE8D2CF12C84859500E6E3F4 /* FirebaseManager.swift in Sources */,
 				CE8D2C8D2C81F37B00E6E3F4 /* Airbnb_cloneApp.swift in Sources */,
 				CE8D2CED2C83478F00E6E3F4 /* Country.swift in Sources */,
+				CEB64DF72CA6D18D000AD5F4 /* MainViewViewModel.swift in Sources */,
+				CEB64DFA2CA6D313000AD5F4 /* TotalPriceButton.swift in Sources */,
 				CE8D2CE22C82795400E6E3F4 /* SignupButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
